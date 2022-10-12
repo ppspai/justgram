@@ -6,7 +6,7 @@ ID.addEventListener("keyup", updateLoginButtonDOM);
 passWord.addEventListener("keyup", updateLoginButtonDOM);
 
 function updateLoginButtonDOM() {
-  if (ID.value && ID.value.include("@") && passWord.value.length >= 5) {
+  if (ID.value && ID.value.includes("@") && passWord.value.length >= 5) {
     loginBtn.disabled = false;
   } else {
     loginBtn.disabled = true;
